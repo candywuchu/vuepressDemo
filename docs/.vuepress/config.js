@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'demo',
-  description: '完善img',
+  title: 'QA',
+  description: '留下问题 便有答案',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/logo.jpg' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
@@ -26,12 +26,13 @@ module.exports = {
         { text: '其它链接', link: 'https://www.baidu.com/' } // 外部链接
       ]
     }],
+    // sidebar: 'auto',
     sidebar: {
       '/guide/vue/': [{ // 对应导航中的link文件夹路径，注意这里是 ‘/’结束
         title: 'test',
         collapsable: true,
         children: [{
-          title: '测试01',
+          title: '三国演义',
           path: 'test01'
         }, {
           title: '测试02',
@@ -40,7 +41,7 @@ module.exports = {
           title: '测试03',
           path: 'test03'
         }]
-      },{ // 对应导航中的link文件夹路径，注意这里是 ‘/’结束
+      }, { // 对应导航中的link文件夹路径，注意这里是 ‘/’结束
         title: 'test2',
         collapsable: true,
         children: [{
@@ -54,17 +55,17 @@ module.exports = {
           path: 'test03'
         }]
       }],
-      // '/guide/ts/': [{
-      //   title: 'Typescript 学习',
-      //   collapsable: false,
-      //   children: [{
-      //     title: '测试',
-      //     path: 'test01'
-      //   }]
-      // }],
+      '/guide/ts/': [{
+        title: 'Typescript 学习',
+        collapsable: false,
+        children: [{
+          title: '测试',
+          path: 'test01'
+        }]
+      }],
       // fallback 侧边栏被最后定义
       '/': [''], //不能放在数组第一个，否则会导致右侧栏无法使用 
     }, // 侧边栏配置
-    sidebarDepth: 0,
+    sidebarDepth: 2,
   }
 };
